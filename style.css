@@ -1,0 +1,142 @@
+/* Basic CSS Reset based on Andy Bell's Modern CSS Reset  */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove browser defaults */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+	margin: 0;
+	padding: 0;
+}
+
+/* Remove list styles on ul, ol elements */
+ul,
+ol {
+	list-style: none;
+}
+
+/* Make images easier to work with */
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/*My code*/
+body{
+    background-color: hsl(217, 54%, 11%);
+    color: white;
+    padding: 120px 25px 120px 25px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+}
+
+.card_container{
+    margin: 0 auto;
+    max-width: 325px;
+    width: 100%;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+    position: relative;
+}
+
+.NFT{
+    max-width: 100%;
+    display: block;
+    padding: 25px;
+    border-radius: 2rem;
+}
+
+.overlay_container{
+    position: relative;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.overlay {
+    margin: 25px;
+    display: flex;
+    position: absolute;
+    border-radius: .5rem;
+    background-color: hsl(178, 100%, 50%);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: ease-in 0.5s;
+}
+
+
+h2{
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+}
+
+h2, .description{
+    max-width: 300px;
+    margin: 0 auto;
+    padding-left: 1.25rem;
+}
+
+.description{
+    font-size: 1rem;
+    line-height: 25px;
+    padding-bottom: 10px;
+}
+.description, .time_remaining, #creation_of{
+    font-weight: lighter;
+    color: hsl(215, 51%, 70%);
+}
+
+.price{
+    color: hsl(178, 100%, 50%);
+    padding-left: 10px;
+    padding-right: 80px;
+}
+
+.flexbox1{
+    display: flex;
+    padding-bottom: 15px;
+    max-width: 265px;
+    margin: 0 auto;
+    border-bottom: solid 1px hsl(215, 51%, 70%);
+}
+
+.flexbox2{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-left: 30px;
+}
+
+.avatar{
+    transform: scale(0.25);
+    border: 2px solid #ffffff;
+    border-radius: 75px;
+    margin-left: -50px;
+    margin-right: -35px;
+}
+
+
+h2:hover, #name:hover{
+    color:aqua;
+    cursor: pointer;
+}
+
+.overlay:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
